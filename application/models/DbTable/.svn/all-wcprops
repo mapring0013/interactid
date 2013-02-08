@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Interactid/!svn/ver/280/trunk/application/models/DbTable
+END
+RefCodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Interactid/!svn/ver/280/trunk/application/models/DbTable/RefCodes.php
+END
+CUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Interactid/!svn/ver/254/trunk/application/models/DbTable/CUser.php
+END
+Company.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Interactid/!svn/ver/254/trunk/application/models/DbTable/Company.php
+END

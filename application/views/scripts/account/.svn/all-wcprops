@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Interactid/!svn/ver/251/trunk/application/views/scripts/account
+END
+newpassword.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Interactid/!svn/ver/247/trunk/application/views/scripts/account/newpassword.phtml
+END
+recovery.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Interactid/!svn/ver/251/trunk/application/views/scripts/account/recovery.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Interactid/!svn/ver/229/trunk/application/views/scripts/account/index.phtml
+END
+resetpw.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Interactid/!svn/ver/249/trunk/application/views/scripts/account/resetpw.phtml
+END

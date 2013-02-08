@@ -1,0 +1,633 @@
+
+
+ <!-- Content begins -->
+
+ <div id="content">
+
+     <!-- Breadcrumbs line -->
+     <div class="breadLine">
+         <ul id="breadcrumbs" class="breadcrumbs">
+			 <li><a href="./index.html">Dashboard </a></li>
+			 <li class="current"><a href="./forms.html">Organisme </a>
+				 <ul>
+					 <li><a href="#" title="">Creer Organisme </a></li>
+					 <li><a href="#" title="">Visualiser Organisme </a></li>
+					 <li><a href="#" title="">Importer Organisme </a></li>
+					 <li><a href="#" title="">Inventaire </a></li>
+				 </ul>
+			 </li>
+		 </ul>	
+
+		<div class="breadLinks">
+			<ul>
+				<li><a href="#" title="Help"><i class="icos-info"></i><span>Help </span></a></li>
+				<li><a href="#" title="Create" id="btncreate">	<i class="icos-add"></i><span>Create </span>
+					</a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>			 
+
+     </div>
+	 
+	 
+    
+     <!-- Main content -->
+     <div class="wrapper"> 
+     <script type="text/javascript">
+     $(document).ready(function() {
+  	   $('#research').hide();
+  	   $('#createOrgandUser').hide();
+    	 $('#advancedsearch').click(function(){
+             $('#research').show();
+           });
+         $('#btncreate').click(function(){
+        	 $('#research').hide();
+        	 $('#control_rechercher').hide();
+        	 $('#HieOrganisme').hide();
+        	 $('#Hieusers').hide();
+        	 $('#createOrgandUser').show();
+        	 $('#hieleveluser').click(function(){
+				 $('#Hieusers').show();
+				 $('#selectuserlevel').click(function(){
+					 $('#Hieusers').hide();
+					 $('#noleveruser').click(function(){
+						 $('#Hieusers').hide();
+						 });
+					 });
+				 });
+        	  $('#yesOrganisme').click(function(){
+        		 $('#HieOrganisme').show();
+        		 $('#nolevelorganisme').click(function(){
+        			 $('#HieOrganisme').hide();
+        			 $('#selectlevel').click(function(){
+        				 $('#HieOrganisme').hide();
+            			 });
+            			 
+            		 });
+            	  });
+             });
+  	 });
+     
+     </script> 
+     <!-- Search -->
+     <div id="control_rechercher">
+	<fieldset>
+	<div class="widget fluid">
+
+	 <div class="whead"><h6>Rechercher</h6>
+	 <div class="titleOpt">
+                       <a data-toggle="dropdown" href="#"><span class="iconb" data-icon="&#xe1f7;"><span class="clear"></span></a>
+                       <ul class="dropdown-menu pull-right">
+                         <li><a class="" href="#"><span class="icon-plus"></span>Add </a></li>
+                             <li><a class="" href="#"><span class="icon-remove"></span>Remove </a></li>
+                             <li><a class="" href="#"><span class="icon-pen_alt2"></span>Edit </a></li>
+                             <li><a class="" href="#"><span class="icon-heart"></span>Do whatever xxx like </a></li>
+                       </ul>
+                     </div>
+	 <div class="clear"></div></div>
+
+	 <div class="formRow">
+		 <div class="grid1"><label>Nom &nbsp;&nbsp;<b>:</b> </label></div>
+		 <div class="grid3"><input type="text" name="####" /></div>
+		 <div class="grid8"><a href="#" class="buttonM bDefault"><span class="icos-search"></span><span>Rechercher</span></a> &nbsp;&nbsp;<a href="#" ><span id="advancedsearch">Recherche avancée</span></a></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div id="research">
+	 <div class="formRow">
+		 <div class="grid3"><label>Raison Sociale: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Email: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Etat: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Website: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Adress: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Code Postal: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Ville: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Pays: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+	 <div class="formRow">
+		 <div class="grid3"><label>Phone: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>
+
+	 <div class="formRow">
+		 <div class="grid3"><label>Phone: </label></div>
+		 <div class="grid9"><input type="text" name="####" /></div>
+		 <div class="clear"></div>
+	 </div>	
+	  <div class="formRow">
+		 <div class="grid6"><a href="#" class="buttonM bDefault"><span class="icos-search"></span><span>Rechercher </span></a></div>
+		 <div class="clear"></div>
+	 </div>
+	 
+	 </div>
+	</div>
+</fieldset>
+<!-- The end Search -->
+    <div class="widget check">
+             <div class="whead"><span class="titleIcon" style="width:57px;">
+             <input type="checkbox" id="titleCheck" name="titleCheck" />
+             </span><h6>Action Selectionne:240</h6>
+             <div class="clear"></div>
+             </div>
+            
+             <table cellpadding="0" cellspacing="0" width="100%" class="tDefault checkAll tMedia" id="checkAll">
+                 <thead>
+                     <tr>
+                         <td><img src="./images/elements/other/tableArrows.png" alt="" /></td>
+                         <td  width="50" class="sortCol"><div>N<sup>o</sup>Ref <span></span></div></td>
+                         <td width="200" class="sortCol"><div>Raison Sociale<span></span></div></td>
+                         <td width="200" class="sortCol"><div>Ville<span></span></div></td>
+                         <td width="130" class="sortCol"><div>Contact<span></span></div></td>
+                         <td width="100">Actions </td>
+                     </tr>
+                 </thead>
+                 <tfoot>
+                     <tr>
+                         <td colspan="6">
+                             <div class="itemActions">
+                                 <label>Apply action: </label>
+                                 <select>
+                                     <option value="">Select action</option>
+                                     <option value="Edit">Edit </option>
+                                     <option value="Delete">Delete </option>
+                                     <option value="Move">Move somewhere </option>
+                                 </select>
+                             </div>
+                             <div class="tPages">
+                                 <ul class="pages">
+                                     <li class="prev"><a href="#" title=""><span class="icon-arrow-14"></span></a></li>
+                                     <li><a href="#" title="" class="active">1 </a></li>
+                                     <li><a href="#" title="">2 </a></li>
+                                     <li><a href="#" title="">3 </a></li>
+                                     <li><a href="#" title="">4 </a></li>
+                                     <li><a href="#" title="">5 </a></li>
+                                     <li><a href="#" title="">6 </a></li>
+                                     <li>... </li>
+                                     <li><a href="#" title="">20 </a></li>
+                                     <li ><a class="paginate_button" tabindex="0">&gt;</a></li>
+                                 </ul>
+                             </div>
+                         </td>
+                     </tr>
+                 </tfoot>
+                 <tbody>
+                     <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>001</td>
+                         <td>SAN Val Maubuee</td>
+                         <td>Torcy</td>
+                         <td>Haissat Christian</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>002</td>
+                         <td>SAN Cergy Pontoise</td>
+                         <td>Cergy Pontoise</td>
+                         <td>Patrick Martin</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>003</td>
+                         <td>SAN Val D'Europe</td>
+                         <td>Marne-la-Vallee</td>
+                         <td>Philippe</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>004</td>
+                         <td>Communaute Urbaine de Lille</td>
+                         <td>Lille</td>
+                         <td>Martine Aubry</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>005</td>
+                         <td>SAN Val Maubuee</td>
+                         <td>Torcy</td>
+                         <td>Haissat Christian</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                          <tr>
+                         <td><input type="checkbox" name="checkRow" /></td>
+                         <td>007</td>
+                         <td>SAN Val D'Europe</td>
+                         <td>Marne-la-Vallee</td>
+                         <td>Philippe Richard</td>
+                         <td class="tableActs">
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                             <a href="#" class="tablectrl_small bDefault tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                         </td>
+                     </tr>
+                 </tbody>
+             </table>
+             
+         </div></br>
+          </div>
+        <!-- click button Orgainsem -->
+		<div id="createOrgandUser">
+		<div class="fluid">
+			<div class="widget grid12">
+				<ul class="tabs">
+					<li><a href="#tabb1">Overview</a></li>
+					<li><a href="#tabb2">More Information</a></li>
+					<li><a href="#tabb3">Other</a></li>
+				</ul>
+					<div id="tabb1" class="tab_content">
+					<div class="fluid">
+						<!-- creat orgainsme -->
+						<div class="widget">
+                 <div class="whead"><h6>Create Organisme and Users</h6><div class="clear"></div></div>
+                 <form class="main ui-formwizard" action="submit.html" method="post" id="wizard3">
+                     <fieldset id="w3first" class="step ui-formwizard-content" style="display: block;">
+                         <h1 style="font-size: 1em;font-weight: bold;position: absolute;right: 16px;
+    top: -38px;">First step create organisme</h1>
+                         <div class="formRow">
+							 <div class="grid3"><label>Company Name: </label></div>
+							 <div class="grid9"><input type="text" name="Org_name" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>RaisonSocial:</label></div>
+							 <div class="grid9"><input type="text" name="Org_social" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Siret:</label></div>
+							 <div class="grid9"><input type="text" name="Org_siret" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>VAT:</label></div>
+							 <div class="grid9"><input type="text" name="Org_vat" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Logo:</label></div>
+							 <div class="grid9">
+							<input type="file" id="logo" name="fileupload" class="logo"
+								size="18.5" style="opacity: 0;" class="validate[required]" />
+						 </div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Address1:</label></div>
+							 <div class="grid9"><input type="text" name="Org_address1" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Address2:</label></div>
+							 <div class="grid9"><input type="text" name="Org_address2" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>ZipCode:</label></div>
+							 <div class="grid9"><input type="text" name="Org_zipcode" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>City:</label></div>
+							 <div class="grid9"><input type="text" name="Org_city" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Country:</label></div>
+							 <div class="grid9">
+							 <select name="Org_country" id="country">
+								<option value="">---<?php echo $this->translate('selectcountry')?>---</option>
+								<option value="France">France</option>
+								<option value="France, Metropolitan">France, Metropolitan</option>
+								<option value="French Guiana">French Guiana</option>
+								<option value="French Polynesia">French Polynesia</option>
+								<option value="French Southern Territories">French Southern
+									Territories</option>
+								<option value="Germany">Germany</option>
+								<option value="Italy">Italy</option>
+								<option value="New Zealand">New Zealand</option>
+								<option value="Portugal">Portugal</option>
+								<option value="Sweden">Sweden</option>
+								<option value="Switzerland">Switzerland</option>
+								<option value="Turkey">Turkey</option>
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="United States">United States</option>
+								<option value="United States Minor Outlying Islands">United
+									States Minor Outlying Islands</option>
+							</select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Telephone:</label></div>
+							 <div class="grid9"><input type="text" name="Org_telephone" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Fax:</label></div>
+							 <div class="grid9"><input type="text" name="Org_fax" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Website:</label></div>
+							 <div class="grid9"><input type="text" name="Org_website" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Mail:</label></div>
+							 <div class="grid9"><input type="text" name="Org_mail" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Statut:</label></div>
+							 <div class="grid9"><input type="text" name="Org_statut" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Type</label></div>
+							 <div class="grid9">
+							 <select name="Org_country" id="country">
+								<option value="">Select Type</option>
+								<option value="SAN">SAN</option>
+								<option value="Municipalite">Municipalite</option>
+								<option value="Hopital">Hopital</option>
+								<option value="Syndic">Syndic</option>
+							</select>
+							 </div>
+							 <div class="clear"></div>							
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Create date:</label></div>
+							 <div class="grid9"><input type="text" name="Org_createdate" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Refcode:</label></div>
+							 <div class="grid9">
+							 <select name="Org_country" id="country">
+								<option value="">Select Refcode</option>
+								<?php 
+	  							foreach ($this->RefCodesFromController as $GetRefCode){
+	  	 							 
+	  	 							?>
+	  	 							<option value="<?php echo $GetRefCode['ref_Id'];?>"><?php echo $GetRefCode['ref_Libelle'];?></option>
+	  	 							<?php 
+	  								}
+								?>
+								
+							 </select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Date valide:</label></div>
+							 <div class="grid9"><input type="text" name="Org_datevalide" /></div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Company Level:</label></div>
+							 <div class="grid9">
+							 <select name="Org_country" id="country">
+								<option value="" id="selectlevel">Select Company Level</option>
+								<option value="Multi-Level - hierarchie" id="yesOrganisme">Multi-Level - hierarchie</option>
+								<option value="No Level" id="nolevelorganisme">No Level</option>
+							</select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  
+						  <div id="HieOrganisme">
+			                     <h6 style="display: block;font-size: 12px;font-weight: bold;padding: 8px 14px 7px;text-align: center;color: #2E6B9B;">Hierarchie Organisme</h6>
+			                      <div class="formRow">
+										 <div class="grid3"><label>Codefunction:</label></div>
+										 <div class="grid9"><input type="text" name="horg_codefuntion" /></div>
+										 <div class="clear"></div>
+								 </div>
+								 <div class="formRow">
+										 <div class="grid3"><label>Secondaire:</label></div>
+										 <div class="grid9"><input type="text" name="horg_secondaire" /></div>
+										 <div class="clear"></div>
+								 </div>
+								  <div class="formRow">
+										 <div class="grid3"><label>Create date:</label></div>
+										 <div class="grid9"><input type="text" name="horg_createdate" /></div>
+										 <div class="clear"></div>
+								 </div>
+								  <div class="formRow">
+										 <div class="grid3"><label>Description:</label></div>
+										 <div class="grid9"><input type="text" name="horg_description" /></div>
+										 <div class="clear"></div>
+								 </div>
+								 <div class="formRow">
+										 <div class="grid3"><label>statut:</label></div>
+										 <div class="grid9">
+										 <select name="users_level" >
+											<option value="">Select statut</option>
+											<option value="yes">Yes</option>
+											<option value="No">No</option>
+										</select>
+										 </div>
+										 <div class="clear"></div>
+								</div>
+               			</div>
+                     </fieldset>
+                     <!-- For Users -->
+                     <fieldset class="step ui-formwizard-content" id="w3confirmation" style="display: none;">
+                         <h1 style="font-size: 1em;font-weight: bold;position: absolute;right: 16px;
+    top: -38px;">Second step create users</h1>
+                         <div class="formRow">
+							 <div class="grid3"><label>Username: </label></div>
+							 <div class="grid9"><input type="text" name="users_name" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Password:</label></div>
+							 <div class="grid9"><input type="text" name="users_password" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Title:</label></div>
+							 <div class="grid9">
+							 <select name="users_title">
+								<option value="">Select User Title</option>
+								<option value="Melle">Melle</option>
+								<option value="Mme">Mme</option>
+								<option value="M.">M.</option>
+							</select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>User Fonction:</label></div>
+							 <div class="grid9"><input type="text" name="users_fonction" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Lastname:</label></div>
+							 <div class="grid9"><input type="text" name="users_lastname" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Firstname:</label></div>
+							 <div class="grid9"><input type="text" name="users_firstname" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Mobilephone:</label></div>
+							 <div class="grid9"><input type="text" name="users_mobilephone" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Officephone:</label></div>
+							 <div class="grid9"><input type="text" name="users_officephone" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Mail:</label></div>
+							 <div class="grid9"><input type="text" name="users_mail" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Statut:</label></div>
+							 <div class="grid9">
+							 <select name="users_statut">
+								<option value="">Select User Statut</option>
+								<option value="Actif">Actif</option>
+								<option value="Suspendu">Suspendu</option>
+								<option value="Inactif">Inactif</option>
+								
+							</select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Create date</label></div>
+							 <div class="grid9"><input type="text" name="users_createdate" /></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="formRow">
+							 <div class="grid3"><label>Refcode:</label></div>
+							 <div class="grid9"><select name="users_refcode">
+								<option value="">Select User Refcode</option>
+								<option value="Interne">Interne</option>
+								<option value="Prestataire">Prestataire</option>	
+							</select>
+							</div>
+							 <div class="clear"></div>
+						  </div>
+						   <div class="formRow">
+							 <div class="grid3"><label>Users Level:</label></div>
+							 <div class="grid9">
+							 <select name="users_level" >
+								<option value="" id="selectuserlevel">Select Users Level</option>
+								<option value="Multi-Level - hierarchie" id="hieleveluser">Multi-Level - hierarchie</option>
+								<option value="No Level" id="noleveruser">No Level</option>
+							</select>
+							 </div>
+							 <div class="clear"></div>
+						  </div>
+						  
+						<div id="Hieusers">
+                     
+                     <h6 style="display: block;font-size: 12px;font-weight: bold;
+    padding: 8px 14px 7px;text-align: center;color: #2E6B9B;">Hierarchie Users</h6>
+                      <div class="formRow">
+							 <div class="grid3"><label>Subusers:</label></div>
+							 <div class="grid9"><input type="text" name="husers_sub" /></div>
+							 <div class="clear"></div>
+					 </div>
+					 <div class="formRow">
+							 <div class="grid3"><label>Create date:</label></div>
+							 <div class="grid9"><input type="text" name="husers_createdate" /></div>
+							 <div class="clear"></div>
+					 </div>
+                     </div>
+                     </fieldset>
+                     <div class="formRow noBorderB">
+                         <div id="status3" class="status"></div>
+                         <div class="formSubmit">
+                             <input type="reset" value="Back" id="back3" class="buttonM bDefault ui-wizard-content ui-formwizard-button" disabled="disabled">
+                             <input type="submit" value="Next" id="next3" class="buttonM bBlue ml10 ui-wizard-content ui-formwizard-button">
+                             <div class="clear"></div>
+                         </div>
+                         <div class="clear"></div>
+                     </div>
+                 </form> 
+                 <div id="w3" class="data"></div>
+             </div>
+             
+              <!-- The end creat orgainsme -->			 
+					</div>
+					
+					<div id="tabb2" class="tab_content">
+
+					fghfghfgh
+					</div>
+					<div id="tabb3" class="tab_content">
+                     	   <button class="btn btn-info">Export CSV</button>
+						   <button class="btn btn-info">annuler</button>
+  					</div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+        <!-- The end Create Orgainsem -->  
+        </div>   
+     </div>
+     <!-- Main content ends -->
+    
+ </div>
+ <!-- Content ends -->
